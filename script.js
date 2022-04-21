@@ -49,8 +49,15 @@ function changeSlide() {
     slides[index].style.display = "block";
     dots[index].classList.add("active");
 
-
-
+    var text = document.getElementById('s_title');
+    if (index == 0) {
+        text.innerHTML = "Совместная разработка";
+    }
+    if (index == 1) {
+        text.innerHTML = "Открытый исходный код";
+    } if (index == 2) {
+        text.innerHTML = "Фильтрация";
+    }
 }
 
 

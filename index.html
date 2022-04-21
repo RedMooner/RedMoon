@@ -11,9 +11,8 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
-
             <div class="logo"></div>
             <span>Meteor Sorter</span>
             <div class="gamburger-container">
@@ -21,18 +20,18 @@
                 <div class="menu_gamburger">
                     <ul>
                         <li><a href="">GitHub</a></li>
-                        <li><a href="">Преимущества</a></li>
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">О программе</a></li>
+                        <li><a href="#f">Преимущества</a></li>
+                        <li><a href="#s">Услуги</a></li>
+                        <li><a href="#a">О программе</a></li>
                     </ul>
                 </div>
                 <button id="close_menu">&#10006;</button>
             </div>
             <ul class="nav-tabs">
                 <li><a href="">GitHub</a></li>
-                <li><a href="">Преимущества</a></li>
-                <li><a href="">Услуги</a></li>
-                <li><a href="">О программе</a></li>
+                <li><a href="#f">Преимущества</a></li>
+                <li><a href="#s">Услуги</a></li>
+                <li><a href="#a">О программе</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +46,7 @@
         </header>
         <div class="banner"> </div>
         <div class="content">
-            <div class="futures">
+            <div class="futures" id="f">
                 <h2>Преимущества</h2>
                 <div class="futures-columns">
                     <div class="future-column">
@@ -88,9 +87,11 @@
                     </div>
                 </div>
             </div>
-            <div class="services">
+            <div class="services" id="s">
                 <div class="slider">
+                    <h2>Услуги</h2>
                     <!--Slider-->
+                    <h3 id="s_title">ывывывывыв</h3>
                     <div id="slider">
                         <div class="slide" style="background:#20232a;">
                           <div class="electronImage"></div>
@@ -179,7 +180,7 @@
         </div>
     </main>
     <footer>
-        <div class="data">
+        <div class="data" id="a">
             <div class="info-block">
                 <ul>
                     <li>Информация</li>

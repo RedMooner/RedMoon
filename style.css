@@ -17,11 +17,15 @@
         background-color: #1c1f2c;
     }
 }
-
 header nav {
     background-color: #20232a;
     display: flex;
     flex-direction: row;
+}
+#header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -97,9 +101,8 @@ span {
         list-style-type: none;
         display: none;
         background-color: #000;
-        height: 69px;
-        width: 500px;
         position: absolute;
+        margin-top: 69px;
     }
 
     .menu_gamburger ul {
@@ -164,7 +167,8 @@ main header {
     border: none;
     font-size: 20px;
 }
-.dwnButton:hover{
+
+.dwnButton:hover {
     background-color: #06acc5;
 }
 
@@ -272,7 +276,6 @@ h2 {
         display: block;
         text-align: center;
         margin: 0 auto;
-        height: 500px;
     }
 
     .pc-services {
@@ -280,8 +283,8 @@ h2 {
     }
 
     #slider {
-        padding-top: 50px;
-        width: 80%;
+        padding-top: 0px;
+        width: 70%;
         margin: 0 auto;
         padding-bottom: 10px;
     }
@@ -294,10 +297,18 @@ h2 {
         animation-duration: 1s;
         justify-content: space-around;
     }
-    .slide div{
+
+    .slide div {
         margin: 0 auto;
         height: 100%;
         width: 90%;
+    }
+    #s_title{
+        font-size: 24px;
+        color: #00a2c9;
+        padding-bottom: 8px;
+        padding-top: 10px;
+        text-align: center;
     }
 
     @keyframes fade {
@@ -317,6 +328,7 @@ h2 {
         font-size: 1.5em;
         padding: 15px 10px;
         border-radius: 5px;
+        padding-bottom: 10px;
 
     }
 
@@ -336,10 +348,8 @@ h2 {
     #right-arrow {
         right: 10px;
     }
-
     #dots-con {
         margin-top: 10px;
-        margin-bottom: 10px;
         width: 200px;
         margin: 0 auto;
         background-color: #0b0d10;
@@ -430,80 +440,170 @@ h2 {
 }
 
 
+@media screen and (min-width: 900px) and (max-width:1920px) {
+    .form {
+        background-color: #20232a;
+    }
+
+    .form p, label {
+        font-size: 14px;
+        color: #61dafb;
+    }
+
+    .form form {}
+
+    form {
+        padding-top: 40px;
+        width: 400px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .form p {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .form p:last-child {
+        margin-bottom: 0px;
+        padding: 20px;
+    }
+
+    input[type=text] {
+        background-color: #373940;
+        border: none;
+        color: #6a6e70;
+        height: 25px;
+        border-radius: 10px 10px 10px 10px;
+        /*Закругляем уголки*/
+        padding-left: 10px;
+        width: 200px;
+        margin-right: 1%;
+    }
+
+    label {
+        width: 200px;
+    }
+
+    select {
+        height: 25px;
+        border: none;
+        border-radius: 10px 10px 10px 10px;
+        background-color: #373940;
+        color: #6a6e70;
+        width: 200px;
+        /*Закругляем уголки*/
+    }
+
+    .zpBtn {
+        height: 35px;
+        width: 132px;
+        background-color: #00dbfd;
+        border: none;
+        font-size: 20px;
+        margin-left: 70px;
+    }
+
+    .zpBtn:hover {
+        background-color: #06acc5;
+    }
+
+    input[type="checkbox"] {
+        accent-color: #00dbfd;
+        background: #1c1f2c;
+        margin-bottom: 15px;
+        margin-left: 10px;
+    }
+
+}
 
 @media screen and (min-width: 0px) and (max-width:900px) {
-  
-}
-.form {
-    background-color: #20232a;
-}
+    .form {
+        background-color: #20232a;
+    }
 
-.form p, label {
-    font-size: 14px;
-    color: #61dafb;
-}
+    input[type=text] {
+        background-color: #373940;
+        border: none;
+        color: #6a6e70;
+        height: 25px;
+        border-radius: 10px 10px 10px 10px;
+        /*Закругляем уголки*/
+        padding-left: 10px;
+        width: 200px;
+        margin-right: 1%;
+    }
 
-.form form {}
+    .form p {
+        margin-bottom: 20px;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
 
-form {
-    padding-top: 40px;
-    width: 400px;
-    margin: 0 auto;
-    justify-content: space-around;
-}
+    .form p, label {
+        font-size: 14px;
+        color: #61dafb;
+    }
 
-.form p {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: flex-start;
-}
-.form p:last-child {
-    margin-bottom: 0px;
-    padding: 20px;
-}
+    .form p:last-child {
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+        text-align: center;
+    }
 
-input[type=text] {
-    background-color: #373940;
-    border: none;
-    color: #6a6e70;
-    height: 25px;
-    border-radius: 10px 10px 10px 10px;
-    /*Закругляем уголки*/
-    padding-left: 10px;
-    width: 200px;
-    margin-right: 1%;
-}
+    label {
+        width: 200px;
+    }
 
-label {
-    width: 200px;
-}
+    select {
+        height: 25px;
+        border: none;
+        border-radius: 10px 10px 10px 10px;
+        background-color: #373940;
+        color: #6a6e70;
+        width: 200px;
+        /*Закругляем уголки*/
+    }
 
-select {
-    height: 25px;
-    border: none;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #373940;
-    color: #6a6e70;
-    width: 200px;
-    /*Закругляем уголки*/
-}
+    form {
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
-.zpBtn {
-    height: 35px;
-    width: 132px;
-    background-color: #00dbfd;
-    border: none;
-    font-size: 20px;
-    margin-left: 70px;
-}
-.zpBtn:hover{
-    background-color: #06acc5;
-}
-input[type="checkbox"] {
-    accent-color: #00dbfd;
-    background: #1c1f2c;
-    margin-bottom: 15px;
-    margin-left: 10px;
+    .zpBtn {
+        height: 35px;
+        width: 132px;
+        background-color: #00dbfd;
+        border: none;
+        font-size: 20px;
+        margin-left: 70px;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .zpBtn:hover {
+        background-color: #06acc5;
+    }
+
+    input[type="checkbox"] {
+        accent-color: #00dbfd;
+        background: #1c1f2c;
+        margin-bottom: 15px;
+        margin-left: 10px;
+    }
 }
 
 
@@ -541,8 +641,9 @@ ul {
     flex-wrap: inherit;
     height: 60px;
 }
-.social-block div{
-height: 50px;
+
+.social-block div {
+    height: 50px;
     width: 50px;
 }
 
